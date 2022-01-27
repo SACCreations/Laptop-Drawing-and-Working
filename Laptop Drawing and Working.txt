@@ -1,0 +1,208 @@
+import turtle
+import math
+import time
+import random
+import winsound
+
+winsound.PlaySound("audio6.wav",winsound.SND_ASYNC)
+wn=turtle.Screen()
+wn.setup(1366,768)
+wn.title("Sharp Art Coding Creations")
+wn.bgpic("background1.gif")
+
+
+#addshape
+wn.addshape("k2.gif")
+wn.addshape("w1.gif")
+wn.addshape("w2.gif")
+
+b=turtle.Turtle()
+#b.speed(0)
+b.pensize(5)
+b.color("black")
+b.up()
+b.setpos(-380,-70)
+b.down()
+#b.ht()
+b.seth(90)
+b.begin_fill()
+b.color('black','dim gray')
+b.fd(420)
+b.circle(-10,90)
+b.fd(740)
+b.circle(-10,90)
+b.fd(420)
+b.seth(-45)
+b.fd(330)
+b.circle(-15,135)
+b.fd(1205)
+b.circle(-15,135)
+b.fd(330)
+b.seth(0)
+b.fd(760)
+b.seth(-45)
+b.fd(330)
+b.circle(-15,30)
+b.seth(180)
+b.fd(1235)
+b.end_fill()
+#
+b.up()
+b.setpos(-350,-30)
+b.down()
+b.pensize(5)
+b.seth(90)
+b.begin_fill()
+b.color('black','gray')
+b.fd(360)
+b.seth(0)
+b.fd(700)
+b.seth(-90)
+b.fd(360)
+b.end_fill()
+b.seth(180)
+b.fd(700)
+
+
+
+k=turtle.Turtle()
+k.speed(0)
+k.up()
+k.setpos(0,-160)
+k.down()
+k.shape("k2.gif")
+k.stamp()
+k.ht()
+
+b.up()
+b.setpos(130,-230)
+b.down()
+b.up()
+b.color('white')
+b.pensize(0)
+b.seth(-45)
+b.fd(100)
+b.seth(180)
+b.fd(400)
+b.seth(45)
+b.fd(100)
+b.down()
+b.up()
+b.seth(-135)
+b.fd(70)
+b.down()
+b.seth(0)
+b.pensize(3)
+b.begin_fill()
+b.color('white','#302a31')
+b.fd(357)
+b.seth(-45)
+b.fd(30)
+b.seth(180)
+b.fd(200)
+b.seth(90)
+b.fd(20)
+b.bk(20)
+b.seth(180)
+b.fd(200)
+b.seth(45)
+b.fd(30)
+b.end_fill()
+
+b.up()
+b.setpos(0,-60)
+b.down()
+b.seth(0)
+b.begin_fill()
+b.color('snow3')
+b.circle(10)
+b.end_fill()
+b.up()
+b.setpos(0,-60)
+b.down()
+b.color('black')
+b.write('hp',False,'center',('MV Boli',13,'bold'))
+
+b.up()
+b.setpos(0,345)
+b.seth(0)
+b.fd(5)
+b.down()
+b.seth(90)
+b.circle(5)
+
+b.up()
+b.setpos(-350,-30)
+b.down()
+b.pensize(3)
+b.seth(90)
+b.begin_fill()
+b.color('black','blue')
+b.fd(360)
+b.seth(0)
+b.fd(700)
+b.seth(-90)
+b.fd(360)
+b.end_fill()
+b.seth(180)
+b.fd(700)
+
+
+b.up()
+b.setpos(0,170)
+b.color('white')
+b.write('Please Wait',False,'center',('arial',24,'bold'))
+b.setpos(-60,150)
+b.shape('circle')
+b.shapesize(0.7)
+b.seth(0)
+for i in range(5):
+    time.sleep(1)
+    b.stamp()
+    b.fd(30)
+    
+b.down()
+b.clearstamps(4)
+b.clearstamps(-4)
+
+b.speed(0)
+b.up()
+b.setpos(0,150)
+b.down()
+b.shape('image\w1.gif')
+b.stamp()
+b.ht()
+
+
+
+c=turtle.Turtle()
+c.up()
+c.setpos(0,150)
+c.down()
+c.speed(1)
+
+
+
+def a():
+    c.shape('image\w1.gif')
+    c.stamp()
+    time.sleep(1)
+    
+    #c.clear()         
+    c.shape('image\w2.gif')
+    c.stamp()
+    time.sleep(1.5)
+
+    c.shape('image\w1.gif')
+    c.stamp()
+    time.sleep(1)
+
+a()
+
+
+
+
+
+
+
+
